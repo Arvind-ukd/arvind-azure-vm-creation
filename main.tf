@@ -1,6 +1,6 @@
 resource "azurerm_network_interface" "example" {
   count = 2
-  name                = "${var.ci_nic}"
+  name                = "${var.ci_nic}-${count.index}     #"${local.computer_name}-${count.index}"
   location            = var.location
   resource_group_name = var.resoucegp
 
