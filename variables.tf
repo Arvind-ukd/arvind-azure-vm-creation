@@ -28,6 +28,6 @@ variable "location" {
   default     =   "subnet1"
   }
 
-  variable “ci_nic” {
+  variable "ci_nic" {
 type = string
 }
