@@ -1,1 +1,1 @@
-ci_nic = “ci-vm-nic”
+ci_nic = "ci-vm-nic"
