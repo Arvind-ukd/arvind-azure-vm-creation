@@ -29,5 +29,5 @@ variable "location" {
   }
 
   variable "ci_nic" {
-type = string
+  type = string
 }
