@@ -26,7 +26,7 @@ resource "azurerm_windows_virtual_machine" "vmexample" {
   ]
 
   os_disk {
-    count = 4
+    # count = 4
      name =  "ci-windows-[count.index]-os-disk"
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
