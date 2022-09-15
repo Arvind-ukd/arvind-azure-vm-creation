@@ -16,8 +16,8 @@ resource "azurerm_network_interface" "ci" {
 resource "azurerm_windows_virtual_machine" "vmexample" {
   count =  4
   name                = "ci-vm-${count.index}"
-  resource_group_name = azurerm_resource_group.example.name
-  location            = azurerm_resource_group.example.location
+  resource_group_name = var.resoucegp
+  location            = var.location
   size                = "Standard_DS1_v2"
   admin_username      = "zadmin"
   admin_password      = "Pass@123Pass@123"
@@ -27,7 +27,7 @@ resource "azurerm_windows_virtual_machine" "vmexample" {
 
   os_disk {
     count = 4
-     name =  ci-windows-[count.index]-os-disk
+     name =  "ci-windows-[count.index]-os-disk"
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
   }
