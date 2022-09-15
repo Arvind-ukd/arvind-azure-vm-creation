@@ -31,3 +31,12 @@ variable "location" {
   variable "ci_nic" {
   type = string
 }
+ variable "si_nic" {
+  type = string
+}
+ variable "eus_nic" {
+  type = string
+}
+ variable "wus_nic" {
+  type = string
+}
