@@ -14,7 +14,7 @@ data "azurerm_subnet" "subnetsi" {
   resource_group_name  =  var.resoucegp
 }
 
-output "subnet_id" {
+output "subnet_id-si" {
   value = data.azurerm_subnet.subnetsi.id
 }
 
@@ -24,7 +24,7 @@ data "azurerm_subnet" "subneteastus" {
   resource_group_name  =  var.resoucegp
 }
 
-output "subnet_id" {
+output "subnet_id-eus" {
   value = data.azurerm_subnet.subneteastus.id
 }
 
@@ -34,6 +34,6 @@ data "azurerm_subnet" "subnetwestus" {
   resource_group_name  =  var.resoucegp
 }
 
-output "subnet_id" {
+output "subnet_id-wus" {
   value = data.azurerm_subnet.subnetwestus.id
 }
